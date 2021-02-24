@@ -1,8 +1,8 @@
 import { ApolloServer, gql } from "apollo-server-micro";
 
 let book = {
-  name: "The Hungarian Story",
-  author: "Ben Grunfeld",
+  name: "A Brief History of Time",
+  author: "Stephen Hawking",
 };
 
 const typeDefs = gql`
