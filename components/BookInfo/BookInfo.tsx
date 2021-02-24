@@ -1,4 +1,5 @@
 import { useQuery, gql } from "@apollo/client";
+import { Book } from "./BookInfo.styles";
 
 const GET_BOOK_DETAILS = gql`
   query {
@@ -44,12 +45,12 @@ const BookInfo = () => {
   // };
 
   return (
-    <div>
+    <Book>
       <p>
         {data.book.name} - {data.book.author}
       </p>
       <button /*onClick={updateBookDetails}*/>Update Book</button>
-    </div>
+    </Book>
   );
 };
 
